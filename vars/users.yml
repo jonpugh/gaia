@@ -1,5 +1,6 @@
 ---
 admin_users:
-  - username: jonpugh
+  - username: jon
     github_username: jonpugh
-
+  - username: jacinto
+    github_username: jacintocapote
