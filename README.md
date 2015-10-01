@@ -25,3 +25,11 @@ Playbooks
 
 - devshop-upgrade.yml: This will run apt-get upgrade and devshop upgrade on all devmaster servers.
 - users.yml: Adds users from the vars/users.yml file.
+
+
+Variables
+=========
+
+The "vars" files hold data about the system. 
+
+- users.yml: An entry for each system admin user.  Each user gets added to every server, and their SSH keys from github are added to the system.
