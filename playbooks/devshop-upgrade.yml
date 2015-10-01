@@ -1,0 +1,16 @@
+---
+- hosts: devmasters
+  remote_user: root
+  tasks:
+    - name: Run apt-get upgrade
+      apt:
+        update_cache: 'yes'
+        upgrade: 'yes'
+
+    - name: Upgrade devshop-cli
+      shell: git pull
+      args:
+        chdir: /usr/share/devshop
+
+    - name: Upgrade devshop
+      shell: devshop upgrade -n
