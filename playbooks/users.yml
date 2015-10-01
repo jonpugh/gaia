@@ -1,0 +1,21 @@
+---
+- hosts: all
+  remote_user: root
+  vars_files:
+    - ../vars/users.yml
+
+  tasks:
+  
+    - name: Add sysadmins to the system.
+      user: 
+        name: "{{ item.username }}"
+        shell: /bin/bash 
+        groups: sudo 
+        append: yes
+      with_items: admin_users
+
+    - name: Add authorized keys for each user.
+      authorized_key: 
+        user: "{{ item.username }}"
+        key: https://github.com/{{ item.github_username }}.keys
+      with_items: admin_users
