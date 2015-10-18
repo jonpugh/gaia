@@ -26,7 +26,7 @@ Running Commands
 You can run adhoc commands with the `ansible` command:
 
 ```bash
-$ ansible -i inventory -m ping -u root
+$ ansible all -i inventory -m ping -u root
 ```
 
 Remote Dynamic Inventory
