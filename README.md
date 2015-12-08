@@ -29,6 +29,29 @@ You can run adhoc commands with the `ansible` command:
 $ ansible all -i inventory -m ping -u root
 ```
 
+Running AdHoc commands
+======================
+
+ansible all -i devshop-inventory.php -u root -a "devshop --version"
+
+
+albatross.devshop.build | success | rc=0 >>
+DevShop version 0.x
+
+dvpfabrics.devshop.build | success | rc=0 >>
+DevShop version 0.x
+
+internal.nucivic.build | success | rc=0 >>
+DevShop version 0.x
+
+system.devshop.build | success | rc=0 >>
+DevShop version 0.x
+
+
+
+
+
+
 Remote Dynamic Inventory
 ========================
 
