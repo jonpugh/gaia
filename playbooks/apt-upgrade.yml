@@ -1,0 +1,8 @@
+---
+- hosts: devmasters
+  remote_user: root
+  tasks:
+    - name: Run apt-get upgrade
+      apt:
+        update_cache: 'yes'
+        upgrade: 'yes'
