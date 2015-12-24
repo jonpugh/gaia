@@ -8,9 +8,9 @@
         upgrade: 'yes'
 
     - name: Upgrade devshop-cli
-      shell: devshop self-update {{ devshop_version }} -n
+      shell: devshop self-update -n
       args:
         chdir: /usr/share/devshop
 
     - name: Upgrade devshop
-      shell: devshop upgrade {{ devshop_version }} -n
+      shell: devshop upgrade -n
