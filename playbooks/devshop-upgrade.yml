@@ -7,6 +7,9 @@
         update_cache: 'yes'
         upgrade: 'yes'
 
+    - name: Upgrade composer
+      shell: composer self-update
+
     - name: Upgrade devshop-cli
       shell: devshop self-update -n
       args:
