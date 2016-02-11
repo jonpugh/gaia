@@ -2,5 +2,5 @@
 <?php
 
 
-print file_get_contents('http://devshop.build/inventory');
+print file_get_contents('http://devshop.support/inventory');
 
